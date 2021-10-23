@@ -12,7 +12,7 @@ export default function Game() {
   const squares = Array(9).fill(null)
 
   return (
-    <>
+    <div className='game'>
       <div className='game-board'>
         <Board squares={squares}> </Board>
       </div>
@@ -21,6 +21,6 @@ export default function Game() {
         <div>{status}</div>
         <ul>{moves}</ul>
       </div>
-    </>
+    </div>
   )
 }
